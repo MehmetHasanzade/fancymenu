@@ -1,20 +1,20 @@
+// src/App.js
+
 import React, { useState } from 'react';
 import menuData from './data/menu';
 import MenuBrowser from './components/MenuBrowser';
 import ChatbotPanel from './components/ChatbotPanel';
 
 export default function App() {
-  const [menu, setMenu] = useState(menuData);
+  const [menu] = useState(menuData);
   const [filteredMenu, setFilteredMenu] = useState(menuData);
   const [chatHistory, setChatHistory] = useState([]);
 
-  // Dummy chatbot handler (will improve later)
+  // Dummy chatbot handler (expand as needed)
   const handleChatbotCommand = (userInput) => {
-    // Example: filter by calories
     let filtered = menu;
     let response = "I'm sorry, I did not understand your request.";
 
-    // Basic parsing for demo - improve later!
     if (userInput.toLowerCase().includes('calories')) {
       const calMatch = userInput.match(/under (\d+) calories/i);
       if (calMatch) {
@@ -29,7 +29,6 @@ export default function App() {
       filtered = menu;
       response = "Menu reset to full list.";
     }
-    // Add more parsing for protein, category, allergens, etc.
 
     setFilteredMenu(filtered);
     setChatHistory(prev => [...prev, { role: 'user', text: userInput }, { role: 'bot', text: response }]);
@@ -40,9 +39,16 @@ export default function App() {
       <header className="bg-red-600 text-white p-4 flex items-center justify-center text-2xl font-bold">
         🍔 FancyMenu
       </header>
+      {/* MAIN CONTENT: always side-by-side on md and up */}
       <div className="flex flex-1 flex-col md:flex-row">
-        <MenuBrowser menu={filteredMenu} />
-        <ChatbotPanel onUserMessage={handleChatbotCommand} chatHistory={chatHistory} />
+        {/* Menu on left */}
+        <div className="w-full md:w-2/3 border-b md:border-b-0 md:border-r border-yellow-300">
+          <MenuBrowser menu={filteredMenu} />
+        </div>
+        {/* Chatbot on right */}
+        <div className="w-full md:w-1/3">
+          <ChatbotPanel onUserMessage={handleChatbotCommand} chatHistory={chatHistory} />
+        </div>
       </div>
       <footer className="bg-red-600 text-white text-center p-2 text-sm">
         Demo App – Powered by React & Tailwind | Inspired by McDonald's

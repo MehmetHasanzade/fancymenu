@@ -13,7 +13,7 @@ const menu = [
     fat: 28,
     allergens: ["Gluten", "Dairy"],
     price: 8.99,
-    image: null,
+    image: "https://images.unsplash.com/photo-1550547660-d9450f859349?auto=format&fit=crop&w=400&q=80",
     description: "A juicy grilled beef burger with classic toppings.",
     tags: ["red meat", "beef", "burger", "main"]
   },
@@ -29,7 +29,7 @@ const menu = [
     fat: 23,
     allergens: ["Dairy", "Gluten", "Eggs", "Fish"],
     price: 7.50,
-    image: null,
+    image: "https://images.unsplash.com/photo-1574926054530-540288c8e678?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Grilled chicken served on crisp romaine with classic Caesar dressing.",
     tags: ["chicken", "salad", "starter"]
   },
@@ -45,7 +45,7 @@ const menu = [
     fat: 12,
     allergens: ["Gluten"],
     price: 7.00,
-    image: null,
+    image: "https://images.unsplash.com/photo-1585238341267-1cfec2046a55?q=80&w=874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Vegetarian burger with a delicious mix of fresh veggies.",
     tags: ["vegetarian", "burger", "main"]
   },
@@ -61,7 +61,7 @@ const menu = [
     fat: 17,
     allergens: [],
     price: 9.00,
-    image: null,
+    image: "https://images.unsplash.com/photo-1670398564097-0762e1b30b3a?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Tender grilled chicken breast with a light herb marinade.",
     tags: ["chicken", "main", "low carb"]
   },
@@ -77,7 +77,7 @@ const menu = [
     fat: 15,
     allergens: [],
     price: 3.00,
-    image: null,
+    image: "https://images.unsplash.com/photo-1598679253544-2c97992403ea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Classic crispy golden fries.",
     tags: ["side", "vegetarian"]
   },
@@ -93,7 +93,7 @@ const menu = [
     fat: 18,
     allergens: ["Dairy"],
     price: 4.25,
-    image: null,
+    image: "https://images.unsplash.com/photo-1721487542490-040b350dc98d?q=80&w=686&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Decadent chocolate fudge sundae topped with whipped cream.",
     tags: ["dessert", "vegetarian"]
   },
@@ -109,7 +109,7 @@ const menu = [
     fat: 13,
     allergens: ["Gluten", "Eggs", "Dairy"],
     price: 3.50,
-    image: null,
+    image: "https://images.unsplash.com/photo-1575272775645-e3e633f28788?q=80&w=735&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Classic breakfast sandwich with egg, cheese, and bacon.",
     tags: ["breakfast", "sandwich"]
   },
@@ -125,7 +125,7 @@ const menu = [
     fat: 3,
     allergens: [],
     price: 4.00,
-    image: null,
+    image: "https://plus.unsplash.com/premium_photo-1712678664930-ef7051cd1b31?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     description: "Warming, protein-rich lentil soup with a spicy kick.",
     tags: ["starter", "vegetarian", "vegan"]
   }
