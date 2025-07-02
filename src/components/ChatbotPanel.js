@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import axios from "axios";
 
 // Replace with your OpenRouter API key
-const apiKey = "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"; // Replace with your OpenRouter API key
-
+//const apiKey = "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"; // Replace with your OpenRouter API key
+const apiKey = process.env.REACT_APP_OPENROUTER_KEY;
 
 export default function ChatbotPanel({ menu, setFilteredMenu, resetMenu }) {
   // System prompt includes instructions for outputting JSON for filtering or reset
